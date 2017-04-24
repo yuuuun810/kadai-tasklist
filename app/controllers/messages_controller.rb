@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
   def new
     @message = Message.new
   end
-  end
+
 
   def create
      @message = Message.new(message_params)
@@ -53,4 +53,5 @@ class MessagesController < ApplicationController
   # Strong Parameter
   def message_params
     params.require(:message).permit(:content)
+  end
 end
