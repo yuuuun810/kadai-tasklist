@@ -3,9 +3,13 @@
  詳細ページ</h1>
  
 
-<p>
+<p>ステータス: 
 <%= @message.status %>
 </p>
+<p>メッセージ: 
+<%= @message.content %>
+</p>
+
 
 <%= link_to '一覧に戻る', messages_path %>
 
