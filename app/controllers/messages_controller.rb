@@ -29,7 +29,7 @@ class MessagesController < ApplicationController
   end
 
   def update
-     @message = Message.update(params[:id])
+     @message = Message.find(params[:id])
 
     if @message.update(message_params)
       flash[:success] = 'Message は正常に更新されました'
